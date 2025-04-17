@@ -12,7 +12,7 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You may also see any lint errors in thnpe console.
 
 ### `npm test`
 
@@ -68,3 +68,78 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Git Branching Cheat Sheet
+
+NEW!! 
+A quick guide to working with Git branches in our project.
+
+---
+
+## 🟢 Creating and Managing Branches - כדי שכל אחד יוכל לעבוד על הקוד שלו בלי לשנות באמת ולפגוע בקוד המלא
+
+- Create a new branch:  
+  `git branch <branch-name>`
+
+- Create and switch to a new branch (most common):  
+  `git checkout -b <branch-name>`
+
+- Switch between branches:  
+  `git checkout <branch-name>`
+
+- See all local branches:  
+  `git branch`
+
+- Delete a local branch (after merge):  
+  `git branch -d <branch-name>`
+
+---
+
+## 🛠 Working on Your Branch
+
+- Stage all changes for commit:  
+  `git add .`
+
+- Commit your changes with a message:  
+  `git commit -m "Your commit message here"`
+
+- Push your new branch to GitHub:  
+  `git push origin <branch-name>`
+
+---
+
+## 🔁 Merging Branches
+
+- Switch to the main branch:  
+  `git checkout main`
+
+- Merge your branch into main:  
+  `git merge <branch-name>`
+
+- Delete a remote branch (after PR is merged):  
+  `git push origin --delete <branch-name>`
+
+---
+
+## 🌐 Working with GitHub
+
+- Push a new branch to GitHub and set upstream:  
+  `git push -u origin <branch-name>`
+
+- Open a Pull Request:  
+  Go to GitHub and click "Compare & pull request"
+
+- Pull the latest changes from the server:  
+  `git pull`
+
+---
+
+## 💡 Good Practices
+
+- Always create a new branch for each feature or fix – **don’t work on `main`**.
+- Use meaningful branch names, like:  
+  `feature/navbar`, `fix/login-error`, `refactor/utils`
+- Keep `main` updated regularly:
+  ```bash
+  git checkout main
+  git pull
