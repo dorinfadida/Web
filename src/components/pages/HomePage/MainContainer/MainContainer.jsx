@@ -1,6 +1,6 @@
 import React from 'react';
 import { ItemCard } from './ItemCard/ItemCard';
-import './MainContainer.css';
+import './MainContainer.css'; 
 
 export const MainContainer = ({ items }) => {
   return (
