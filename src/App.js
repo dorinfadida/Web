@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import { HomePage } from './components/pages/HomePage/HomePage';
 import './App.css';
 
 function App() {
+  const itemData = {
+    imageUrl: 'https://yodfat.shop/wp-content/uploads/2020/06/100289_211_e.b197b0.webp',
+    name: 'Stylish Chair',
+    category: 'Furniture'
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <HomePage {...itemData} />
     </div>
   );
 }
