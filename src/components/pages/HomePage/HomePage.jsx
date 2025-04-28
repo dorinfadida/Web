@@ -1,8 +1,8 @@
 import React from 'react';
 import { MainContainer } from './MainContainer/MainContainer';
 
-export const HomePage = ({ imageUrl, name, category }) => {
+export const HomePage = ({ items }) => {
   return (
-    <MainContainer imageUrl={imageUrl} name={name} category={category} />
+    <MainContainer items={items} />
   );
 };
