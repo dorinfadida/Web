@@ -4,6 +4,7 @@
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+  position: relative;
 }
 
 .item-image {
@@ -35,7 +36,22 @@
   margin-bottom: 0.5rem;
 }
 
+
 .item-category {
   font-size: 0.875rem;
   color: #6b7280;
+}
+
+.listed-since {
+  font-size: 0.875rem;
+  color: #6b7280;
+  position: absolute;  
+  bottom: 0.1rem;     
+  right: 0.5rem;     
+}
+
+.fits-mark {
+  position: absolute;  
+  bottom: 0.1rem;     
+  right: 0.5rem; 
 }

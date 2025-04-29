@@ -11,6 +11,8 @@ export const MainContainer = ({ items }) => {
           imageUrl={item.imageUrl}
           name={item.name}
           category={item.category}
+          listedSince={item.listedSince}
+          fitsMark={item.fitsMark}
         />
       ))}
     </div>
