@@ -10,7 +10,7 @@ const ItemDetails = ({ name, category }) => {
   );
 };
 
-export const ItemCard = ({ imageUrl, name, category }) => {
+export const ItemCard = ({ imageUrl, name, category,  description}) => {
   return (
     <div className="item-card">
       <div className="item-image">
@@ -20,7 +20,7 @@ export const ItemCard = ({ imageUrl, name, category }) => {
           <div className="image-placeholder">Image Placeholder</div>
         )}
       </div>
-      <ItemDetails name={name} category={category} />
+      <ItemDetails name={name} category={category} description={description} />
     </div>
   );
 };
