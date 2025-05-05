@@ -1,6 +1,7 @@
 import { HomePage } from './components/pages/HomePage/HomePage';
 import './App.css';
 
+
 function App() {
   const itemData = {
     imageUrl: 'https://yodfat.shop/wp-content/uploads/2020/06/100289_211_e.b197b0.webp',
