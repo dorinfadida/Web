@@ -1,0 +1,94 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 10px 20px;
+    height: 60px;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* space between logo and text */
+  }
+  
+  
+  .brand-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 700;       /* bold */
+    color: #222;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+  
+  
+  
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #888;
+    padding: 6px 12px;
+    border-radius: 999px; /* fully rounded (pill shape) */
+    flex: 1;
+    margin: 0 20px;
+    max-width: 500px;
+  }
+  
+  .search-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-input::placeholder {
+    color: #242222; /* darker than default light gray */
+  }
+  
+  
+  .search-icon {
+    margin-left: 8px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  
+  .icons-container {
+    display: flex;
+    gap: 16px;
+  }
+
+  
+  .toolbar-icon:hover {
+    color: #000;
+  }
+
+  .toolbar-icon {
+    font-size: 42px; /* Try 28–36px for large icons */
+    cursor: pointer;
+    color: #333;
+  }
+  
+  
+  .large-icon {
+    font-size: 28px; /* Bigger than the default 20–24px */
+  }
+  
+  .bold-icon {
+    font-weight: bold;
+  }
+  
+  
