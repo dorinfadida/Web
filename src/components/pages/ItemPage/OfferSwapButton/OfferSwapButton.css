@@ -1,0 +1,17 @@
+.offer-swap-button {
+    margin-top: auto;
+    padding: 14px 28px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .offer-swap-button:hover {
+    background-color: #333;
+  }
+  
