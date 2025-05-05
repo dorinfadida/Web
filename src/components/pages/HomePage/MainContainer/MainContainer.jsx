@@ -1,5 +1,5 @@
 import React from 'react';
-import { ItemCard } from './ItemCard/ItemCard';
+import { ItemCard } from '../../../ItemCard/ItemCard';
 import './MainContainer.css'; 
 
 export const MainContainer = ({ items }) => {
@@ -11,6 +11,8 @@ export const MainContainer = ({ items }) => {
           imageUrl={item.imageUrl}
           name={item.name}
           category={item.category}
+          listedSince={item.listedSince}
+          fitsMark={item.fitsMark}
         />
       ))}
     </div>

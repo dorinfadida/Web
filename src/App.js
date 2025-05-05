@@ -1,5 +1,5 @@
 import { HomePage } from './components/pages/HomePage/HomePage';
-import { itemsData } from './components/pages/HomePage/MainContainer/ItemsData';
+import { itemsData } from './components/ItemCard/ItemsData';
 import './App.css';
 import TradeContainer from './components/pages/HomePage/TradePage/TradeContainer/TradeConatainer';
 
