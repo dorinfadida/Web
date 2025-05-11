@@ -3,14 +3,14 @@ import './ItemCard.css';
 
 const ItemDetails = ({ name, category, listedSince=false, fitsMark=false}) => {
   return (
-    <div className="item-details">
-      <h2 className="item-name">{name}</h2>
-      <p className="item-category">{category}</p>
+    <div id="item-details">
+      <h2 id="item-name">{name}</h2>
+      <p id="item-category">{category}</p>
       {listedSince && (
-      <p className="listed-since">{listedSince}</p>
+      <p id="listed-since">{listedSince}</p>
       )}
       {fitsMark && (
-      <p className="fits-mark">{fitsMark}</p>
+      <p id="fits-mark">{fitsMark}</p>
       )}
     </div>
   );
@@ -18,12 +18,12 @@ const ItemDetails = ({ name, category, listedSince=false, fitsMark=false}) => {
 
 export const ItemCard = ({ imageUrl, name, category, listedSince=false, fitsMark=false}) => {
   return (
-    <div className="item-card">
-      <div className="item-image">
+    <div id="item-card">
+      <div id="item-image">
         {imageUrl ? (
-          <img src={imageUrl} alt={name} className="item-img" />
+          <img src={imageUrl} alt={name} id="item-img" />
         ) : (
-          <div className="image-placeholder">Image Placeholder</div>
+          <div id="image-placeholder">Image Placeholder</div>
         )}
       </div>
       <ItemDetails name={name} category={category} listedSince={listedSince} fitsMark={fitsMark}/>
