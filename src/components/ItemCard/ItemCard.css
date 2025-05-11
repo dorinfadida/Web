@@ -1,6 +1,7 @@
 #item-card {
   width: 16rem;
   border-radius: 0.75rem;
+  cursor: pointer;
   overflow: hidden;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
   background-color: #ffffff;

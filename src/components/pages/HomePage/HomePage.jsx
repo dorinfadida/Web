@@ -2,7 +2,9 @@ import React from 'react';
 import { MainContainer } from './MainContainer/MainContainer';
 import './HomePage.css';
 
-export const HomePage = ({ items }) => {
+
+
+export const HomePage = () => {
   return (
     <>
       <div className="entry-banner">
@@ -11,9 +13,11 @@ export const HomePage = ({ items }) => {
 
       <div className="homepage-container">
         <h2 id="items-headline">Explore Your Options!</h2>
-        <MainContainer items={items} />
+        <MainContainer/>
         <h3 id="items-bottomline">Register Now To Start Trading!</h3>
       </div>
     </>
   );
 };
+
+export default HomePage;

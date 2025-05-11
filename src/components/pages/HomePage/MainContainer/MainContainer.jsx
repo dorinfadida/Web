@@ -1,11 +1,12 @@
 import React from 'react';
 import { ItemCard } from '../../../ItemCard/ItemCard';
-import './MainContainer.css'; 
+import './MainContainer.css';
+import { itemsData } from '../../../ItemCard/ItemsData.js';
 
-export const MainContainer = ({ items }) => {
+export const MainContainer = () => {
   return (
     <div className="items-container">
-      {items.map((item, index) => (
+      {itemsData.map((item, index) => (
         <ItemCard
           key={index}
           imageUrl={item.imageUrl}
