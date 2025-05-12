@@ -3,7 +3,7 @@ import "./ToolBar.css";
 import { FaSearch, FaRegCommentDots, FaBars } from "react-icons/fa";
 import { MdPerson } from "react-icons/md";
 
-const ToolBar = ({ toggleMenu, isMenuOpen }) => {
+const ToolBar = ({ toggleMenu }) => {
 
   return (
     <header className="toolbar">

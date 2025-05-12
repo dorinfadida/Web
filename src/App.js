@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <ToolBar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+      <ToolBar toggleMenu={toggleMenu} />
       {isMenuOpen && <MenuSideBar onClose={toggleMenu} />}
       
       <Routes>

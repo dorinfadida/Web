@@ -5,23 +5,12 @@ import './ButtonsContainer.css'
 export const ButtonsContainer = ({ onTabChange }) => {
   const [activeTab, setActiveTab] = useState('myBids');
 
-  const handleClick = (tab) => {
-    setActiveTab(tab);
-    onTabChange(tab);
-  };
+  const handleClick = (tab) => {setActiveTab(tab); onTabChange(tab);};
 
   return (
     <div className="bids-button-container">
-      <BidsButton
-        text="My Bids"
-        clicked={activeTab === 'myBids'}
-        onClick={() => handleClick('myBids')}
-      />
-      <BidsButton
-        text="Received Bids"
-        clicked={activeTab === 'bidsIGot'}
-        onClick={() => handleClick('bidsIGot')}
-      />
+      <BidsButton text="My Bids" clicked={activeTab === 'myBids'} onClick={() => handleClick('myBids')}/>
+      <BidsButton text="Received Bids" clicked={activeTab === 'bidsIGot'} onClick={() => handleClick('bidsIGot')}/>
     </div>
   );
 };
