@@ -1,11 +1,11 @@
 import react from "react";
-import TradeContainer from "./TradeContainer/TradeConatainer";
+import TradeContainer from "./TradeContainer"
 
 export default function TradePage() {
     return (
       <div>
         <ToolBar/>
-        <TradeContainer/>
+        <TradeContainer classname="trade-wrapper" />
       </div>
     );
   }

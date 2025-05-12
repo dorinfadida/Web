@@ -16,11 +16,7 @@ const ItemDetails = ({ name, category, listedSince=false, fitsMark=false}) => {
   );
 };
 
-<<<<<<< HEAD:src/components/pages/HomePage/MainContainer/ItemCard/ItemCard.jsx
-export const ItemCard = ({ imageUrl, name, category,  description}) => {
-=======
 export const ItemCard = ({ imageUrl, name, category, listedSince=false, fitsMark=false}) => {
->>>>>>> b642fd3a51801a2213e765ab06857a895c2e5103:src/components/ItemCard/ItemCard.jsx
   return (
     <div className="item-card">
       <div className="item-image">
@@ -30,11 +26,7 @@ export const ItemCard = ({ imageUrl, name, category, listedSince=false, fitsMark
           <div className="image-placeholder">Image Placeholder</div>
         )}
       </div>
-<<<<<<< HEAD:src/components/pages/HomePage/MainContainer/ItemCard/ItemCard.jsx
-      <ItemDetails name={name} category={category} description={description} />
-=======
       <ItemDetails name={name} category={category} listedSince={listedSince} fitsMark={fitsMark}/>
->>>>>>> b642fd3a51801a2213e765ab06857a895c2e5103:src/components/ItemCard/ItemCard.jsx
     </div>
   );
 };
