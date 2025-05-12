@@ -1,0 +1,75 @@
+/* בסיס לדסקטופ רגיל */
+.item-page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+  }
+  
+  /* פריסת עמוד רגילה */
+  .item-layout {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  /* טורים פנימיים */
+  .left-column,
+  .right-column {
+    flex: 1;
+  }
+  
+  /* למסכים רחבים מאוד (מסכים 2K ומעלה) */
+  @media (min-width: 1600px) {
+    .item-page-wrapper {
+      max-width: 1400px;
+      padding: 60px 80px;
+    }
+  }
+  
+  /* למסכים בינוניים (טאבלטים, מסכים צרים) */
+  @media (max-width: 992px) {
+    .item-page-wrapper {
+      padding: 40px 24px;
+    }
+  
+    .item-layout {
+      gap: 30px;
+    }
+  }
+  
+  /* למסכים קטנים (טלפונים) */
+  @media (max-width: 768px) {
+    .item-page-wrapper {
+      padding: 24px 16px;
+    }
+  
+    .item-layout {
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .right-column {
+      align-items: center;
+    }
+  
+    .user-info-box {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  
+    .user-actions {
+      align-self: flex-end;
+    }
+  
+    .thumbnails {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .offer-swap-button {
+      align-self: center;
+    }
+  }
+  
