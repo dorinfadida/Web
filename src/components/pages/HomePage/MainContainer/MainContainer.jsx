@@ -1,21 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ItemCard } from '../../../ItemCard/ItemCard';
+import ItemPage from '../../ItemPage/ItemPage';
+import { mockItem } from '../../ItemPage/MockItem';
+import { GenericModal } from '../../../GenericModal/GenericModal';
+import { itemsData } from '../../../ItemCard/ItemsData';
 import './MainContainer.css';
-import { itemsData } from '../../../ItemCard/ItemsData.js';
 
 export const MainContainer = () => {
+  const [selectedItem, setSelectedItem] = useState(null);
+
   return (
     <div className="items-container">
       {itemsData.map((item, index) => (
-        <ItemCard
-          key={index}
-          imageUrl={item.imageUrl}
-          name={item.name}
-          category={item.category}
-          listedSince={item.listedSince}
-          fitsMark={item.fitsMark}
-        />
+        <div key={index} onClick={() => setSelectedItem(mockItem)}>
+          <ItemCard
+            imageUrl={item.imageUrl}
+            name={item.name}
+            category={item.category}
+            listedSince={item.listedSince}
+            fitsMark={item.fitsMark}
+          />
+        </div>
       ))}
+
+      {selectedItem && (
+        <GenericModal onClose={() => setSelectedItem(null)}>
+          <ItemPage item={selectedItem} />
+        </GenericModal>
+      )}
     </div>
   );
 };

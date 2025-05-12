@@ -6,9 +6,9 @@ export const itemsData = [
     fitsMark: <img src="/CheckCircle.png" alt="You have a fit" className="fits-mark" />,
   },
   {
-    imageUrl: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS52AsMdawT0fJq55mPhbfwA0skwjYOTH5Peifh3qxij-RtmKISfjjvm2Stwt-n1FrH8Uysas9ynjoSCHw2ffEB9Bo231wxXkS6of14ZopzJHfFeFJcYJ_xEw&usqp=CAc',
-    name: 'Modern Lamp',
-    category: 'Lighting',
+    imageUrl: 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MUW33_AV3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=Sk5mNVdNcjhJbUs0R1JIajlMTVBnVlZya2lKWlJmUEwrYndWOTJiVWJWQUYwVmtIbGRkS25RMVpBRlo0bk5DUW9odXUzN3kxdU5pZjFrUWErZ2llTVE',
+    name: 'Wireless Headphones',
+    category: 'Music',
     listedSince: '4 days ago',
   },
   {
