@@ -1,7 +1,7 @@
 // src/pages/MyProfilePage/ProfileItemsSection/ProfileItemsSection.jsx
 
 import React from 'react';
-import { ItemCard } from '../../ItemCard/ItemCard';
+import { ItemCard } from '../../../ItemCard/ItemCard';
 import './ProfileItemsSection.css';
 
 const mockItems = [
@@ -40,7 +40,8 @@ const ProfileItemsSection = ({ onAddItem, onItemClick }) => {
         {mockItems.map((item, i) => (
           <ItemCard key={i} name={item.name} category={item.category} imageUrl={item.imageUrl} onClick={() => onItemClick(item)} />
         ))}
-      </div>    </div>
+      </div>
+    </div>
   );
 };
 

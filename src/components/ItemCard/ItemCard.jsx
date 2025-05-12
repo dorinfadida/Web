@@ -16,9 +16,9 @@ const ItemDetails = ({ name, category, listedSince=false, fitsMark=false}) => {
   );
 };
 
-export const ItemCard = ({ imageUrl, name, category, listedSince=false, fitsMark=false}) => {
+export const ItemCard = ({ imageUrl, name, category, listedSince=false, fitsMark=false, onClick}) => {
   return (
-    <div id="item-card">
+    <div id="item-card" onClick={onClick}>
       <div id="item-image">
         {imageUrl ? (
           <img src={imageUrl} alt={name} id="item-img" />
