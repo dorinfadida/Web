@@ -1,0 +1,125 @@
+.profile-items-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 40px 40px;  
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* כותרת עליונה + כפתור */
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* כותרת "Items you're offering" */
+  .section-title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  /* כפתור הוספת פריט – דומה לעריכה */
+  .add-item-button {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.15s ease;
+    cursor: pointer;
+  }
+  
+  .add-item-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .add-item-button img {
+    width: 38px;
+    height: 38px;
+  }
+  
+  /* רשת הכרטיסים */
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 28px;
+    margin-top: 12px;
+  }
+  
+
+  /* עיצוב מוגדל רק בעמוד הפרופיל */
+.profile-items-section .item-card {
+    width: 100%; /* מאפשר למלא את תא הגריד */
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+    height: 97%;
+    
+  }
+  
+  .profile-items-section .item-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* תמונה גבוהה וללא שוליים */
+  .profile-items-section .item-image {
+    height: 200px;
+    width: 100%;
+  }
+  
+  .profile-items-section .item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* פרטים */
+  .profile-items-section .item-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: flex-start; /* מוודא שכל הטקסט מיושר שמאלה */
+    gap: 12px;
+    background-color: transparent !important;
+  }
+  
+  /* שם פריט */
+  .profile-items-section .item-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+  }
+  
+  /* קטגוריה + זמן */
+  .profile-items-section .item-category {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem ;
+    color: #666;
+    margin: 0;
+  }
+  
+  /* מובייל */
+  @media (max-width: 768px) {
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  
+    .items-grid {
+      gap: 20px;
+    }
+  }
+  

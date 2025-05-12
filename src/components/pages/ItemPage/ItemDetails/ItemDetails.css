@@ -1,29 +1,31 @@
-.item-details {
+.item-details-itemPage {
     margin-bottom: 20px;
     text-align: left;
 }
   
-  .item-category {
+  .item-category-itemPage {
     color: #888;
     font-size: 18px;
     margin: 0;
+    margin-bottom: 12px;
+    
   }
   
-  .item-name {
+  .item-name-itemPage {
     font-size: 32px;
     margin: 5px 0 15px 0;
   }
   
-  .item-description-box {
+  .item-description-box-itemPage {
     background-color: #eae7e7;
-    padding: 25px;
+    padding: 20px;
     border-radius: 10px;
     line-height: 1.7;
     max-width: 600px;
     text-align: left;
   }
   
-  .item-description {
+  .item-description-itemPage {
     margin: 0;
     font-size: 18px;
     text-align: left;

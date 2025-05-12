@@ -10,9 +10,9 @@ const ItemDetails = ({ name, category }) => {
   );
 };
 
-export const ItemCard = ({ imageUrl, name, category }) => {
+export const ItemCard = ({ imageUrl, name, category, age, onClick }) => {
   return (
-    <div className="item-card">
+    <div className="item-card" onClick={onClick}>
       <div className="item-image">
         {imageUrl ? (
           <img src={imageUrl} alt={name} className="item-img" />
