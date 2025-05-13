@@ -12,7 +12,7 @@ export const HomePage = () => {
       </div>
 
       <div className="homepage-container">
-        <h2 id="items-headline">Explore Your Options!</h2>
+        {/* <h2 id="items-headline">Explore Your Options!</h2> */}
         <MainContainer/>
         <h3 id="items-bottomline">Register Now To Start Trading!</h3>
       </div>
