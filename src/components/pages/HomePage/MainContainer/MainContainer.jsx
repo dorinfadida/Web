@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { ItemCard } from '../../../ItemCard/ItemCard';
 import ItemPage from '../../ItemPage/ItemPage';
 import { mockItem } from '../../ItemPage/MockItem';
-import { GenericModal } from '../../../GenericModal/GenericModal';
 import { itemsData } from '../../../ItemCard/ItemsData';
 import './MainContainer.css';
 

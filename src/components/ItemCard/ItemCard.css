@@ -14,7 +14,7 @@
 }
 
 #item-image {
-  height: 10rem;
+  height: 14rem;
   background-color: #f3f4f6;
   display: flex;
   align-items: center;
@@ -33,24 +33,28 @@
 }
 
 #item-details {
-  padding: 1rem;
-  background-color: #C0E1D1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  min-height: 5.5rem;
+  padding: 0.75rem;
+  background-color: #2A9C64;
+  height: 4rem; 
   position: relative;
+  overflow: hidden; 
 }
 
+
 #item-name {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #111827;
+  line-height: 1.2;
+  color: #ffffff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 1;
 }
 
 #item-category {
   font-size: 0.875rem;
-  color: #6b7280;
+  line-height: 1.2;
+  color: #ffffff;
 }
 
 #listed-since {
@@ -61,10 +65,10 @@
   right: 0.75rem;
 }
 
-#fits-mark {
+/* #fits-mark {
   position: absolute;
   bottom: 0.5rem;
   right: 0.75rem;
   font-size: 1.25rem;
   color: green;
-}
+} */

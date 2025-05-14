@@ -1,4 +1,3 @@
-// components/pages/ItemPage/ItemDetails/ItemDetails.jsx
 import React from 'react';
 import './ItemDetails.css';
 export default function ItemDetails({ category, name, description, isModalView }) {
