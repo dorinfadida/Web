@@ -24,10 +24,8 @@ export const MainContainer = () => {
       ))}
 
       {selectedItem && (
-        <GenericModal onClose={() => setSelectedItem(null)}>
-          <ItemPage item={selectedItem} />
-        </GenericModal>
-      )}
+        <ItemPage item={selectedItem} onClose={() => setSelectedItem(null)} />
+        )}
     </div>
   );
 };

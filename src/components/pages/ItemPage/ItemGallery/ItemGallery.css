@@ -22,20 +22,21 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.4); 
     border: none;
-    border-radius: 50%; 
+    border-radius: 50%;
     width: 32px;
     height: 32px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.3); /* רקע שקוף יותר */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* אפקט עדין */
   }
-
+  
   .arrow-button:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.55); /* טיפה פחות שקוף בהובר */
   }
   
   .arrow-left {

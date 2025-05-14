@@ -1,5 +1,4 @@
 .item-details-itemPage {
-    margin-bottom: 20px;
     text-align: left;
 }
   
@@ -17,7 +16,7 @@
   }
   
   .item-description-box-itemPage {
-    background-color: #eae7e7;
+    background-color: #fafffe;
     padding: 20px;
     border-radius: 10px;
     line-height: 1.7;
