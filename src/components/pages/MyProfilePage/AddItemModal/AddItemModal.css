@@ -74,7 +74,7 @@
 
 .add-item-btn {
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #2A9C64;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -85,7 +85,7 @@
 }
 
 .add-item-btn:hover {
-  background-color: #43a047;
+  background-color: #35ad73;
 }
 
 .image-preview-gallery {

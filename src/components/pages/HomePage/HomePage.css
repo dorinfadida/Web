@@ -13,7 +13,7 @@
 }
 
 #items-headline {
-  font-family: inter;
+  font-family: 'Rubik';
   text-align: center;
   font-size: 2.25rem;
   font-weight: bold;
@@ -22,7 +22,7 @@
 }
 
 #items-bottomline {
-  font-family: inter;
+  font-family: 'Rubik';
   text-align: center;
   font-size: 1.5rem;
   color: #4b5563;

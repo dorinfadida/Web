@@ -31,7 +31,7 @@ const ProfileItemsSection = ({ onAddItem, onItemClick }) => {
   return (
     <div className="profile-items-section">
       <div className="section-header">
-        <h2 className="section-title">Items you're offering</h2>
+        <h2 className="section-title">Your Items to Give</h2>
         <button className="add-item-button" onClick={onAddItem}>
           <img src="/icons/plus-square.svg" alt="Add item" />
         </button>

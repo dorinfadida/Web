@@ -2,11 +2,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './OfferSwapButton.css';
 
-export default function OfferSwapButton() {
+const OfferSwapButton = ({ item }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/trade");
+    navigate(`/make-a-bid/${item.id}`, { state: { itemToTake: item } });
   };
 
   return (
@@ -14,4 +14,6 @@ export default function OfferSwapButton() {
       Offer a Swap
     </button>
   );
-}
+};
+
+export default OfferSwapButton;

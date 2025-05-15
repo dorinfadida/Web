@@ -10,14 +10,7 @@
   gap: 40px;
   box-sizing: border-box;
   }
-  
-  /* -------- Header -------- */
-  .profile-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;                    
-    align-items: start;
-  }
+
   
   /* מובייל */
   @media (max-width: 768px) {

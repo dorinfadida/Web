@@ -12,7 +12,7 @@ const MyProfilePage = () => {
 
   return (
     <div className="my-profile-page">
-      <ProfileHeader {...mockUserProfile} />
+      <ProfileHeader user={mockUserProfile} />
       <ProfileItemsSection
         onAddItem={() => setModalOpen(true)}
         onItemClick={(item) => setSelectedItem(item)} 

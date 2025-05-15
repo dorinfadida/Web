@@ -1,57 +1,26 @@
+/* עטיפה כללית */
 .profile-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 32px;
-  border-radius: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   position: relative;
+  background-color: #ffffff;
+  padding: 20px 32px; /* פחות גובה, יותר הדוק */
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* צד שמאל */
-.left-section {
-  flex-shrink: 0;
-}
-
-/* צד ימין */
-.right-section {
-  flex: 1;
+.profile-row {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  min-height: 140px;
-  margin-top: 16px
-}
-
-/* תגיות */
-.right-section .tag-list {
-  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
   flex-wrap: wrap;
-  gap: 12px;
-}
-
-.right-section .tag {
-  font-size: 0.95rem;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background-color: #f3f4f6;
-  border: 1px solid #ccc;
-  color: #333;
-  transition: all 0.2s ease;
-}
-
-.right-section .tag:hover {
-  background-color: #e5e7eb;
+  width: 100%;
 }
 
 /* כפתור עריכה */
 .edit-button {
   position: absolute;
   top: 16px;
-  right: 16px;
+  right: 22px;
   background: none;
   border: none;
   cursor: pointer;
@@ -68,53 +37,123 @@
   transform: scale(1.1);
 }
 
-.user-info-wrapper .user-info-box {
+/* פרטי משתמש */
+.user-info-box {
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  padding: 1.25rem 1.5rem;
+  padding: 0;
   border-radius: 16px;
-  background-color: #e9eef3;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   width: 100%;
   max-width: 400px;
   transition: box-shadow 0.2s ease;
 }
 
-.user-info-wrapper .user-profilePic {
+.user-profilePic {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.user-info-wrapper .user-name {
-  font-size: 1.3rem;
+.user-name {
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 0.2rem;
 }
 
-.user-info-wrapper .user-location {
+.user-location {
   font-size: 1rem;
   color: #555;
 }
 
-.user-info-wrapper .user-swaps {
+.user-swaps {
   font-size: 0.95rem;
   color: #777;
   margin-top: 0.5rem;
 }
 
+/* פרטי קשר */
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+  border-left: 1.5px solid #eee;
+  border-right: 1.5px solid #eee;
+  min-width: 200px;
+}
+
+.contact-info-box {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-label {
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* תגיות */
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.looking-for-title {
+  font-weight: 600;
+  font-size: 1rem; /* גדול יותר */
+  margin-bottom: 4px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* יותר מרווח */
+  max-width: 100%;
+}
+
+.tag {
+  font-size: 0.85rem; /* גדול יותר */
+  padding: 6px 14px; /* גדול ומרופד יותר */
+  border-radius: 999px;
+  background-color: #f3f4f6;
+  border: 1px solid #ccc;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #e5e7eb;
+}
 
 /* מובייל */
 @media (max-width: 768px) {
-  .profile-header {
+  .profile-row {
     flex-direction: column;
-    padding: 24px;
+  }
+
+  .profile-header {
+    padding: 20px;
   }
 
   .edit-button {
     top: 12px;
     right: 12px;
+  }
+
+  .middle-section {
+    border-left: none;
+    border-right: none;
+    padding: 16px 0;
+  }
+
+  .right-section {
+    max-width: 100%;
   }
 }

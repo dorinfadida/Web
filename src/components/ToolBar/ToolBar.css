@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2d3e36;
+  background-color: #232e29;
   padding: 12px 24px;
   height: 30px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
@@ -23,9 +23,9 @@
 }
 
 .brand-text {
-  font-family: 'Rubik';
-  font-size: 17px;
-  font-weight: 7Inter00;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
   color: #f2f3f5;
   text-transform: uppercase;
   letter-spacing: 0.05em;

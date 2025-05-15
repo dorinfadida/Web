@@ -5,7 +5,7 @@ const mockUserProfile = {
     location: 'Haifa',
     swaps: 27,
     profilePic: 'https://img.freepik.com/premium-photo/realistic-girl-ai-women_980716-3617.jpg?w=740',
-    lookingFor: [
+    tags: [
       '🧒 Baby & Kids Clothing',
       '🎒 Bags & Luggage',
       '📚 Books & Magazines',
@@ -13,6 +13,8 @@ const mockUserProfile = {
       '🎸 Musical Instruments',
       '🍽️ Kitchenware',
     ],
+    phone: "050-1234567",
+    email: "danac9@gmail.com"
   };
   
   export default mockUserProfile;
