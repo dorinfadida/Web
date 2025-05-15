@@ -1,28 +1,61 @@
-// src/pages/MyProfilePage/ProfileHeader/ProfileHeader.jsx
-
 import React from 'react';
-import UserInfoBox from '../../ItemPage/UserInfoBox/UserInfoBox';
-import LookingForTags from '../../ItemPage/LookingForTags/LookingForTags';
 import './ProfileHeader.css';
 
-const ProfileHeader = ({ name, location, swaps, profilePic, lookingFor }) => {
+const ProfileHeader = ({ user }) => {
+  const {
+    name,
+    location,
+    swaps,
+    profilePic,
+    phone,
+    email,
+    tags,
+  } = user;
+
   return (
     <div className="profile-header">
-    <button className="edit-button">
+      <button className="edit-button">
         <img src="/icons/edit_profile.svg" alt="Edit profile" />
-    </button>
+      </button>
 
-    <div className="left-section">
-        <div className="user-info-wrapper">
-        <UserInfoBox user={{ name, location, swaps, profilePic }} />
+      <div className="profile-row">
+        {/* Left section: user info */}
+        <div className="left-section">
+          <div className="user-info-box">
+            <img
+              src={profilePic}
+              alt={name}
+              className="user-profilePic"
+            />
+            <div>
+              <div className="user-name">{name}</div>
+              <div className="user-location">{location}</div>
+              <div className="user-swaps">Made <strong>{swaps}</strong> Swaps</div>
+            </div>
+          </div>
         </div>
-    </div>
 
-    <div className="right-section">
-        <LookingForTags tags={lookingFor} />
-    </div>
-    </div>
+        {/* Middle section: contact info */}
+        <div className="middle-section">
+          <div className="contact-info-box">
+            <p className="contact-label">📞 {phone}</p>
+            <p className="contact-label">📧 {email}</p>
+          </div>
+        </div>
 
+        {/* Right section: tags */}
+        <div className="right-section">
+          <div className="looking-for">
+            <div className="looking-for-title">Looking for:</div>
+            <div className="tag-list">
+              {tags.map((tag, index) => (
+                <div className="tag" key={index}>{tag}</div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

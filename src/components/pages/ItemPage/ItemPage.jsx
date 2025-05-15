@@ -24,7 +24,7 @@ export default function ItemPage({ item, onClose }) {
                 />
                 <div className="user-contact-row">
                   <UserInfoBox user={item.user} />
-                  <OfferSwapButton onClick={() => console.log("Swap offered!")} />
+                  <OfferSwapButton item={item} />
                   </div>  
                   <LookingForTags tags={item.user.lookingFor} />
               </div>

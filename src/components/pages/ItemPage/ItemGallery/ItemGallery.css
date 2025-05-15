@@ -15,7 +15,7 @@
     height: 350px;
     object-fit: cover;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 10px;
   }
   
   .arrow-button {
@@ -66,10 +66,11 @@
     object-fit: cover;
     border: 2px solid transparent;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 8px;
+    border: 0.8px solid #ccc;
   }
   
   .thumbnail.active {
-    border-color: #007bff;
+    border: 1.5px solid #007bff;
   }
   

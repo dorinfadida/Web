@@ -1,4 +1,4 @@
-.user-info-box {
+.user-info-box-itempage {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -11,64 +11,35 @@
 }
 
   
-  .user-profilePic {
+  .user-profilePic-itempage {
     width: 64px;
     height: 64px;
     border-radius: 50%;
     object-fit: cover;
   }
   
-  .user-info-text {
+  .user-info-text-itempage {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
   }
   
-  .user-name {
+  .user-name-itempage {
     font-weight: bold;
     font-size: 1.1rem;
   }
   
-  .user-location {
+  .user-location-itempage {
     font-size: 0.8rem;
     color: #555;
   }
   
-  .user-swaps {
+  .user-swaps-itempage {
     font-size: 0.9rem;
     color: #666;
     margin-top: 8px;
   }
   
-  .swaps-count {
+  .swaps-count-itempage {
     font-weight: bold;
-  }
-  
-  .user-actions {
-    display: flex;
-    gap: 14px;
-    margin-left: 20px;
-  }
-
-  .circle-button {
-    width: 38px;
-    height: 38px;
-    background-color: #eee;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-
-  .circle-button:hover {
-    transform: scale(1.05);
-  }
-  
-  .circle-button img {
-    width: 20px;
-    height: 20px;
   }

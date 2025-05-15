@@ -4,14 +4,14 @@ import './UserInfoBox.css';
 
 export default function UserInfoBox({ user }) {
   return (
-<div className="user-info-box">
-  <img className="user-profilePic" src={user.profilePic} alt="Profile" />
+<div className="user-info-box-itempage">
+  <img className="user-profilePic-itempage" src={user.profilePic} alt="Profile" />
 
-  <div className="user-info-text">
-    <div className="user-name">{user.name}</div>
-    <div className="user-location">{user.location}</div>
-    <div className="user-swaps">
-      Made <span className="swaps-count">{user.swaps}</span> Swaps
+  <div className="user-info-text-itempage">
+    <div className="user-name-itempage">{user.name}</div>
+    <div className="user-location-itempage">{user.location}</div>
+    <div className="user-swaps-itempage">
+      Made <span className="swaps-count-itempage">{user.swaps}</span> Swaps
     </div>
   </div>
 </div>

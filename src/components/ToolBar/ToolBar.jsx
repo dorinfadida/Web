@@ -9,7 +9,7 @@ const ToolBar = ({ toggleMenu }) => {
     <header className="toolbar">
       <div className="logo-container">
         <img src="/favicon.ico" alt="Logo" className="logo" />
-        <span className="brand-text">GIVE N TAKE</span>
+        <span className="brand-text">Give&Take</span>
       </div>
 
       <div className="search-container">
