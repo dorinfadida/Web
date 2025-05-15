@@ -5,8 +5,9 @@ import './HomePage.css';
 
 
 export const HomePage = () => {
+
   return (
-    <>
+    <div className='home-page'>
       <div className="entry-banner">
         <img src="/EntryBanner.png" alt="giveNtake banner" className="entry-image" />
       </div>
@@ -15,7 +16,7 @@ export const HomePage = () => {
         <MainContainer/>
         <h3 id="items-bottomline">Register Now To Start Trading!</h3>
       </div>
-    </>
+    </div> 
   );
 };
 

@@ -8,46 +8,62 @@
   padding: 0 20px; 
 }
 
-.items-container {
+.items-container-bid-center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.bids-headers h3 {
-  font-size: 1.2rem;
-  font-weight: 800;
-  flex: 1;
-  text-align: center;
-}
 
-
-.item-pair {
+.item-pair-bid-center {
   background-color: #ececec;
   border-radius: 20px;
   display: flex;
-  gap: 5rem; 
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
   margin-bottom: 1.5rem;
 }
 
-.bid-row {
+.bid-row-bid-center {
   padding: 1rem;
+  width: 100%;
+  max-width: 1050px;
 }
 
-.give-item {
-  margin-left: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.give-item-bid-center {
+  flex: 0 0 400px; 
 }
 
-
-.take-item {
-  margin-left: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.take-item-bid-center {
+  flex: 0 0 100px; 
 }
 
-.profile {
-  margin-right: 1000px;
+ .profile-bid-center {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+} 
+
+
+.bids-columns-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1050px;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
 }
+
+.give-column-header,
+.take-column-header,
+.profile-column-header {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.give-column-header {
+  flex: 0 0 600px; 
+}
+

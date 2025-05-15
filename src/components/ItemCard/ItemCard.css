@@ -34,7 +34,7 @@
 
 #item-details {
   padding: 0.75rem;
-  background-color: #2A9C64;
+  background-color: #ffffff;
   height: 4rem; 
   position: relative;
   overflow: hidden; 
@@ -42,33 +42,33 @@
 
 
 #item-name {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.2;
-  color: #ffffff;
+  color: #000000;
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 1;
 }
 
 #item-category {
-  font-size: 0.875rem;
-  line-height: 1.2;
-  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #000000;
 }
 
 #listed-since {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #9ca3af;
   position: absolute;
   bottom: 0.5rem;
   right: 0.75rem;
 }
 
-/* #fits-mark {
+#fits-mark {
   position: absolute;
   bottom: 0.5rem;
   right: 0.75rem;
   font-size: 1.25rem;
   color: green;
-} */
+}
