@@ -1,13 +1,10 @@
 
-  .bids-headline{
+  .bids-headline,
+   .bids-subheadline
+  {
+    color: #2d3e36;
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
   }
 
-  .bids-subheadline{
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  

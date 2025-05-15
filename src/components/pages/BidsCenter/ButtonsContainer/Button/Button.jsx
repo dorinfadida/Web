@@ -7,7 +7,7 @@ export const BidsButton = ({ text, clicked, onClick }) => {
       className={clicked ? 'bids-button active' : 'bids-button'}
       onClick={onClick}
     >
-      {text}
+      <p className='button-text'>{text}</p>
     </button>
   );
 };

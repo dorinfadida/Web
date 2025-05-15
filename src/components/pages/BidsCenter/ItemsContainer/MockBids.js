@@ -21,11 +21,11 @@ export const mockBids = [
     id: 2,
     takeItem: {
       name: 'Cool Hat',
-      image: 'path-to-image3.jpg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1IvqP06bo5hDW28_RSb3Byw2Q9KdzLYxZ_g&s',
     },
     giveItem: {
       name: 'Retro Hat',
-      image: 'path-to-image4.jpg',
+      image: 'https://i.ebayimg.com/images/g/tfcAAOSwOopf5EKk/s-l400.jpg',
     },
     user: {
       name: 'Israel Israeli',

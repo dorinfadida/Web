@@ -45,7 +45,7 @@
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.2;
-  color: #000000;
+  color: #2d3e36;
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 1;
@@ -54,7 +54,7 @@
 #item-category {
   font-size: 0.9rem;
   line-height: 1;
-  color: #000000;
+  color: #2d3e36;
 }
 
 #listed-since {

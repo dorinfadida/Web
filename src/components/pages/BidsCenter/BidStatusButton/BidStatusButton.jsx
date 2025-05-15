@@ -1,13 +1,15 @@
 import { FaCheckCircle, FaTimesCircle, FaSyncAlt } from 'react-icons/fa';
 import './BidStatusButton.css';
 
-export const BidStatusButton = ({text, accept=false, decline=false, change=false, icon=false}) => {
+export const BidStatusButton = ({text, accept=false, decline=false, change=false, icon=false, deleteBid=false}) => {
       const statusClass = accept
     ? 'accept'
     : decline
     ? 'decline'
     : change
     ? 'change'
+    : deleteBid
+    ? 'delete'
     : '';
 
   return (

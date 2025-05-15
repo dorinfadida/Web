@@ -16,14 +16,16 @@
 
 
 .item-pair-bid-center {
-  background-color: #ececec;
+  background: linear-gradient(145deg, #fefcf9, #f9f5f0);
   border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem 2rem;
   margin-bottom: 1.5rem;
 }
+
 
 .bid-row-bid-center {
   padding: 1rem;
@@ -32,18 +34,12 @@
 }
 
 .give-item-bid-center {
-  flex: 0 0 400px; 
+  margin-right: 70px;
 }
 
 .take-item-bid-center {
-  flex: 0 0 100px; 
+  margin-left: 70px;
 }
-
- .profile-bid-center {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-} 
 
 
 .bids-columns-header {
@@ -55,15 +51,40 @@
   margin-bottom: 1rem;
 }
 
-.give-column-header,
-.take-column-header,
-.profile-column-header {
+.give-column-header{
+  color: #2d3e36;
+  margin-top: 30px;
   text-align: center;
   font-size: 1.1rem;
   font-weight: 700;
+  margin-left: 95px;
 }
 
-.give-column-header {
-  flex: 0 0 600px; 
+
+.take-column-header {
+  color: #2d3e36;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-right: 508px;
 }
 
+.profile-bid-center {
+  display: flex;
+  padding: 1rem;
+  background-color: #fffaf5;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-left: 20px;
+}
+
+
+.swap-icon-center {
+  background-color: #f0ebe5;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

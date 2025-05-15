@@ -14,7 +14,7 @@ export const HomePage = () => {
 
       <div className="homepage-container">
         <MainContainer/>
-        <h3 id="items-bottomline">Join now and start swapping!</h3>
+        <h3 id="items-bottomline">Join Now And Start Swapping!</h3>
       </div>
     </div> 
   );

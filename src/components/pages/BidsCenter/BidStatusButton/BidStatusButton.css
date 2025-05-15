@@ -1,4 +1,4 @@
-.status-button {
+ .status-button {
   display: flex;
   align-items: center;
   padding: 0.1rem 0.7rem;
@@ -9,7 +9,7 @@
   font-size: 9px;
   margin-left: 30px;
   margin-right: 30px;
-
+  cursor: pointer;
 }
 
 .status-button.accept {
@@ -27,5 +27,5 @@
 }
 
 .status-icon {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }

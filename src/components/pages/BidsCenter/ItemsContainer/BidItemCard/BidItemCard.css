@@ -6,11 +6,18 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.bid-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 .bid-item-image {
   height: 8rem;
-  background-color: #f3f4f6;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,13 +30,12 @@
 }
 
 .bid-image-placeholder {
-  color: #9ca3af;
   font-size: 0.875rem;
 }
 
 .bid-item-details {
   padding: 0.5rem;
-  background-color: #e6f4f1;
+  background-color: #ffffff;
 }
 
 .bid-item-name {

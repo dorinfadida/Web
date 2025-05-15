@@ -1,9 +1,13 @@
 import React from "react";
 import "./ToolBar.css";
-import { FaSearch, FaRegCommentDots, FaBars } from "react-icons/fa";
+import { FaSearch, FaBars } from "react-icons/fa";
+import { MdNotifications } from "react-icons/md";
 import { MdPerson } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
 
 const ToolBar = ({ toggleMenu }) => {
+  const navigate = useNavigate();
+  const handleNavigate = (path) => { navigate(path);};
 
   return (
     <header className="toolbar">
@@ -18,8 +22,8 @@ const ToolBar = ({ toggleMenu }) => {
       </div>
 
       <div className="icons-container">
-        <FaRegCommentDots className="toolbar-icon large-icon" />
-        <MdPerson className="toolbar-icon large-icon bold-icon" />
+        <MdNotifications className="toolbar-icon large-icon" />
+        <MdPerson className="toolbar-icon large-icon bold-icon" onClick={() => handleNavigate('/profile')} />
 
         <div className="toolbar-icon" onClick={toggleMenu}>
           <FaBars />
