@@ -1,0 +1,22 @@
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.filter-text {
+  font-size: 14px;
+  color: #2d3e36;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter-select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  color: #2d3e36;
+  cursor: pointer;
+}

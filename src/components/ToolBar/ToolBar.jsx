@@ -1,6 +1,6 @@
 import React from "react";
 import "./ToolBar.css";
-import { FaSearch, FaBars } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { MdNotifications } from "react-icons/md";
 import { MdPerson } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
@@ -16,10 +16,6 @@ const ToolBar = ({ toggleMenu }) => {
         <span className="brand-text">Give&Take</span>
       </div>
 
-      <div className="search-container">
-        <input type="text" placeholder="Search" className="search-input" />
-        <FaSearch className="search-icon" />
-      </div>
 
       <div className="icons-container">
         <MdNotifications className="toolbar-icon large-icon" />
@@ -28,6 +24,7 @@ const ToolBar = ({ toggleMenu }) => {
         <div className="toolbar-icon" onClick={toggleMenu}>
           <FaBars />
         </div>
+        
       </div>
     </header>
   );

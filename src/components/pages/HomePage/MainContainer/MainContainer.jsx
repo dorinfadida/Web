@@ -17,7 +17,8 @@ export const MainContainer = () => {
             name={item.name}
             category={item.category}
             listedSince={item.listedSince}
-            fitsMark={item.fitsMark}
+            profileImage={item.profileImage}
+            distance={item.distance}
           />
         </div>
       ))}

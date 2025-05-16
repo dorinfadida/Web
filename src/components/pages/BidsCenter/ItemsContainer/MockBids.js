@@ -2,8 +2,8 @@ export const mockBids = [
   {
     id: 1,
     takeItem: {
-      name: 'Old Hat',
-      image: 'https://yodfat.shop/wp-content/uploads/2020/06/100289_211_e.b197b0.webp',
+      name: 'Serving Utensils',
+      image: 'https://secondhandisrael.com/cdn/shop/files/1687794568821.jpg?v=1689085709&width=360',
     },
     giveItem: {
         name: 'Beats Headphones',

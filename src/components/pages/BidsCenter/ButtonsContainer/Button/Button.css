@@ -1,20 +1,21 @@
 .bids-button {
+    border-radius: 30px;
     align-items: center;
-    padding: 0.5px 15px;
+    padding: 0.1px 10px;
     margin: 10px;
     background-color: #2A9C64;
-    border: 1px solid black;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     transition: all 0.3s ease;
   }
   
 .bids-button.active {
-  background-color: #232e29;
+  background-color: #2d3e36;
   align-items: center;
-  border: 1px solid black;
 }
   
 .button-text {
+  margin-left: 3px;
+  margin-right: 3px;
   color: white; 
 }

@@ -1,0 +1,42 @@
+export const categoryOptions = [
+  "🏠 Household & Living",
+  "🛋️ Furniture",
+  "🧊 Home Appliances",
+  "🍽️ Kitchenware",
+  "💡 Lighting & Decor",
+  "📦 Storage & Organization",
+  "👚 Clothing & Fashion",
+  "👔 Men’s Clothing",
+  "👗 Women’s Clothing",
+  "👟 Shoes & Accessories",
+  "🎒 Bags & Luggage",
+  "🧒 Baby & Kids Clothing",
+  "🎮 Entertainment & Leisure",
+  "📚 Books & Magazines",
+  "🎲 Board Games & Puzzles",
+  "🧸 Toys & Games",
+  "🎸 Musical Instruments",
+  "🎨 Hobbies & DIY Kits",
+  "💻 Tech & Electronics",
+  "📱 Phones & Gadgets",
+  "🖥️ Computers & Accessories",
+  "📺 TVs & Media Devices",
+  "🎮 Gaming Consoles & Gear",
+  "🌿 Outdoor & Lifestyle",
+  "🏀 Sports & Outdoors",
+  "🏕️ Camping & Travel Gear",
+  "🪴 Garden & Plants",
+  "👶 Family & Kids",
+  "👶 Baby Gear & Equipment",
+  "🧠 Educational Materials",
+  "🐶 Pets",
+  "🐾 Pet Supplies & Accessories"
+];
+
+export const distanceOptions = [
+  { label: "Any Distance", value: "" },
+  { label: "Within 1 km", value: "1" },
+  { label: "Within 3 km", value: "3" },
+  { label: "Within 5 km", value: "5" },
+  { label: "Within 10 km", value: "10" }
+];
