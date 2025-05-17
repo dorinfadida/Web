@@ -18,7 +18,14 @@ export const FilterComponent = () => {
           <option key={i} value={d.value}>{d.label}</option>
         ))}
       </select>
+    
+
+      <div className="preference-checkbox">
+            <input type="checkbox" id="personalize" />
+            <label htmlFor="personalize">Personalize Results</label>
+      </div>
     </div>
+
   );
 };
 
