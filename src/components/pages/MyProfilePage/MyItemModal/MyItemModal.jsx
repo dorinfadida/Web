@@ -15,6 +15,7 @@ const MyItemModal = ({ item, onClose }) => {
                         name={item.name}
                         category={item.category}
                         description={item.description}
+                        story={item.story}
                         isModalView={true}
                     />
                     <button className="edit-item-button" onClick={() => console.log("Edit clicked")}>

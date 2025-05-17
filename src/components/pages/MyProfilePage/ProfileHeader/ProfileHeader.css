@@ -2,7 +2,7 @@
 .profile-header {
   position: relative;
   background-color: #ffffff;
-  padding: 20px 32px; /* פחות גובה, יותר הדוק */
+  padding: 20px 32px; 
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }

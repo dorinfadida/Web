@@ -7,8 +7,8 @@ export const itemsData = [
     distance: '2.5 km from your location!',
   },
   {
-    imageUrl: 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MUW33_AV3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=Sk5mNVdNcjhJbUs0R1JIajlMTVBnVlZya2lKWlJmUEwrYndWOTJiVWJWQUYwVmtIbGRkS25RMVpBRlo0bk5DUW9odXUzN3kxdU5pZjFrUWErZ2llTVE',
-    name: 'Wireless Headphones',
+    imageUrl: 'https://www.cnet.com/a/img/resize/b3b226dd87ad22c4598b0c99dd081c6a4b3fc39f/hub/2024/05/02/5d88eb13-5d1f-46e8-9ad1-9494683aae13/beats-solo-4-pink.jpg?auto=webp&fit=crop&height=900&width=1200',
+    name: 'Beats Headphones',
     category: '📱 Phones & Gadgets',
     profileImage: "https://cdn.lucidpic.com/cdn-cgi/image/w=600,format=auto,metadata=none/66c4384702f8f.png",
     distance: '3.7 km from your location!',

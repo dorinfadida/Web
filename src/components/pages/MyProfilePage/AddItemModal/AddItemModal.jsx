@@ -1,11 +1,22 @@
 import React, { useState } from 'react';
 import './AddItemModal.css';
 
+const mockStories = {
+  "Funny": "When my kid started belting out Power Rangers songs during Zoom calls – these headphones saved my job. They're wireless, but our connection was stronger than ever. I even accidentally paired them to the neighbor’s laptop – she says thanks. If they survived my son, they can survive anything.",
+  "Poetic": "In the noise of day, they brought me peace, Between laughter and cries – they wrapped my ears in silence. On waves of Zoom, we sailed – no cords, no chaos. Now they journey on – to accompany a new soul.",
+  "Emotional": "Every morning, as the world entered through my screen, they wrapped me in quiet. My son played in the background – I worked. Thanks to them. They were a small bridge between home and work, between noise and focus. Now I pass them on with love, hoping they serve someone else just as well.",
+  "Storytelling": "It started with a new job and a noisy toddler. I needed focus, clarity, and peace – and these Beats delivered. They’ve been with me through client calls, coffee breaks, and chaos. Now it’s someone else’s turn to make them part of their daily rhythm.",
+  "Practical": "Beats wireless headphones – reliable, clear sound, built-in mic, and great noise isolation. Perfect for Zoom calls, remote work, or just tuning out household noise. Pairs easily with phone or laptop, battery life still solid. Lightly used and in good condition – ready to plug into your routine.",
+};
+
 const AddItemModal = ({ onClose }) => {
   const [itemName, setItemName] = useState('');
   const [category, setCategory] = useState('');
   const [description, setDescription] = useState('');
+  const [usedFor, setUsedFor] = useState('');
   const [images, setImages] = useState([]);
+  const [story, setStory] = useState('');
+  const [selectedStyle, setSelectedStyle] = useState('');
   const [showStyleOptions, setShowStyleOptions] = useState(false);
 
   const handleFileChange = (e) => {
@@ -20,6 +31,16 @@ const AddItemModal = ({ onClose }) => {
     onClose();
   };
 
+  const handleStyleSelect = (style) => {
+    setShowStyleOptions(false);
+    setSelectedStyle(style);
+    setStory(mockStories[style]);
+  };
+  
+  const handleRefreshClick = () => {
+    // Placeholder: no actual story change yet
+    console.log("Refresh clicked for style:", selectedStyle);
+  };
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -101,38 +122,63 @@ const AddItemModal = ({ onClose }) => {
             </div>
           )}
 
-          <div className="form-group">
-            <div className="description-header">
-              <span className="description-label">Description:</span>
-              <div className="ai-style-wrapper">
-              <button
-                type="button"
-                className="ai-style-button"
-                onClick={() => setShowStyleOptions(prev => !prev)}
-                title="Generate with AI"
-              >
-                <img src="/icons/ai_generate_text.svg" alt="Generate Description" className="ai-icon" />
-              </button>
-              {showStyleOptions && (
-                <ul className="style-dropdown">
-                  {["Standard", "Literary", "Funny", "Professional", "Bold & Catchy"].map((style) => (
-                    <li key={style} onClick={() => {
-                      setShowStyleOptions(false);
-                      console.log("Selected style:", style);
-                    }}>
-                      {style}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-            </div>
+<div className="form-group">
+            <label>Description:</label>
             <textarea
-              rows="4"
+              rows="3"
               placeholder="Add a short description..."
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
+          </div>
+
+          <div className="form-group">
+            <label>How did this item serve you?</label>
+            <textarea
+              rows="3"
+              placeholder="Explain how the item helped you or was used..."
+              value={usedFor}
+              onChange={(e) => setUsedFor(e.target.value)}
+            />
+          </div>
+
+          <div className="form-group">
+            <div className="description-header">
+              <span className="description-label">Item Story:</span>
+              <div className="ai-style-wrapper">
+                <button
+                  type="button"
+                  className="ai-style-button"
+                  onClick={() => setShowStyleOptions(prev => !prev)}
+                  title="Generate Story"
+                >
+                  <img src="/icons/ai_generate_text.svg" alt="AI" className="ai-icon" />
+                </button>
+                {selectedStyle && (
+                  <span className="selected-style">{selectedStyle}</span>
+                )}
+                {selectedStyle && (
+                  <button
+                    type="button"
+                    className="refresh-button"
+                    onClick={handleRefreshClick}
+                    title="Refresh story"
+                  >
+                    <img src="/icons/refresh.svg" alt="Refresh" className="refresh-icon" />
+                  </button>
+                )}
+                {showStyleOptions && (
+                  <ul className="style-dropdown">
+                    {Object.keys(mockStories).map((style) => (
+                      <li key={style} onClick={() => handleStyleSelect(style)}>
+                        {style}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+            <div className="story-box">{story || <span className="placeholder">Choose a style to generate a story...</span>}</div>
           </div>
 
           <button type="submit" className="add-item-btn">Add Item</button>
@@ -143,3 +189,4 @@ const AddItemModal = ({ onClose }) => {
 };
 
 export default AddItemModal;
+
