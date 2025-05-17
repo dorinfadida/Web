@@ -35,8 +35,9 @@ export const categoryOptions = [
 
 export const distanceOptions = [
   { label: "Any Distance", value: "" },
-  { label: "Within 1 km", value: "1" },
-  { label: "Within 3 km", value: "3" },
-  { label: "Within 5 km", value: "5" },
-  { label: "Within 10 km", value: "10" }
+  { label: "1 km", value: "1" },
+  { label: "3 km", value: "3" },
+  { label: "5 km", value: "5" },
+  { label: "10 km", value: "10" },
+  { label: "20 km", value: "10" },
 ];

@@ -3,6 +3,7 @@ import "./ToolBar.css";
 import { FaBars } from "react-icons/fa";
 import { MdNotifications } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import SearchBar from '../pages/HomePage/Search/Search';
 
 const ToolBar = ({ toggleMenu, isSignedIn, onSignUpClick, onSignInClick }) => {
   const navigate = useNavigate();
@@ -16,6 +17,10 @@ const ToolBar = ({ toggleMenu, isSignedIn, onSignUpClick, onSignInClick }) => {
       <div className="logo-container">
         <img src="/favicon.ico" alt="Logo" className="logo" />
         <span className="brand-text">Give&Take</span>
+      </div>
+
+      <div className="toolbar-search-center">
+        <SearchBar />
       </div>
 
       {isSignedIn ? (

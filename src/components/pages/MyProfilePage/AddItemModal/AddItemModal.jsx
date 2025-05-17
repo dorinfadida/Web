@@ -42,10 +42,10 @@ const AddItemModal = ({ onClose }) => {
     console.log("Refresh clicked for style:", selectedStyle);
   };
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <button className="close-button" onClick={onClose}>×</button>
-        <h2 className="modal-title">Add New Item</h2>
+    <div className="modal-overlay-add-item" onClick={onClose}>
+      <div className="modal-content-add-item" onClick={(e) => e.stopPropagation()}>
+        <button className="close-button-add-item" onClick={onClose}>×</button>
+        <h2 className="modal-title-add-item">Add New Item</h2>
 
         <form className="add-item-form" onSubmit={handleSubmit}>
           <div className="form-group">
@@ -136,7 +136,7 @@ const AddItemModal = ({ onClose }) => {
             <label>How did this item serve you?</label>
             <textarea
               rows="3"
-              placeholder="Explain how the item helped you or was used..."
+              placeholder="Explain how the item was used and why people should take it..."
               value={usedFor}
               onChange={(e) => setUsedFor(e.target.value)}
             />

@@ -5,6 +5,7 @@ body {
     sans-serif, 'Rubik';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 50px;
 }
 
 code {

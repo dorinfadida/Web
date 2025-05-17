@@ -1,6 +1,5 @@
 import React from 'react';
 import { MainContainer } from './MainContainer/MainContainer';
-import SearchBar from './Search/Search';
 import './HomePage.css';
 
 export const HomePage = () => {
@@ -8,10 +7,6 @@ export const HomePage = () => {
     <div className='home-page'>
       <div className="entry-banner">
         <img src="/EntryBanner.png" alt="giveNtake banner" className="entry-image" />
-      </div>
-
-      <div>
-        <SearchBar />
       </div>
 
       <div className="homepage-container">

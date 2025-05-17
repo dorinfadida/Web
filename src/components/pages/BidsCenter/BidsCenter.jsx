@@ -8,9 +8,9 @@ const BidsCenter = () => {
 
   return (
     <div className="bids-center-wrapper">
-      <h2 className="bids-headline">Your Bid Center</h2>
+      <h2 className="bids-headline">Bid Activity Center</h2>
       <h3 className="bids-subheadline">
-        Scroll and check the status on your past bids!
+        Scroll and Check the status of your sent and received bids!
       </h3>
 
       <ButtonsContainer onTabChange={setActiveTab} />

@@ -20,7 +20,7 @@ const mockItems = [
     {
       name: 'Wooden Puzzle',
       category: '🧸 Toys & Games',
-      imageUrl: 'https://i.ebayimg.com/00/s/MTE1OFgxMzU2/z/Uf0AAOSwgM5hhmYE/$_57.JPG?set_id=8800005007',
+      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFUQsbrRUZXkLjDKcP71T3saAfufJPsR2Dw&s',
       listedsince: "2 Weeks",
     },
     {
