@@ -20,3 +20,13 @@
   color: #2d3e36;
   cursor: pointer;
 }
+
+
+.preference-checkbox {
+  font-size: 14px;
+  color: #2d3e36;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
