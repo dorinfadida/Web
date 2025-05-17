@@ -21,6 +21,7 @@ export default function ItemPage({ item, onClose }) {
                   category={item.category}
                   name={item.name}
                   description={item.description}
+                  story={item.story}
                 />
                 <div className="user-contact-row">
                   <UserInfoBox user={item.user} />
