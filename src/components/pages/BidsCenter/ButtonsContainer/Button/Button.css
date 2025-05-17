@@ -1,21 +1,28 @@
 .bids-button {
-    border-radius: 30px;
-    align-items: center;
-    padding: 0.1px 10px;
-    margin: 10px;
-    background-color: #2A9C64;
-    cursor: pointer;
-    font-size: 15px;
-    transition: all 0.3s ease;
-  }
-  
-.bids-button.active {
-  background-color: #2d3e36;
-  align-items: center;
+  border-radius: 999px;
+  padding: 6px 18px;
+  margin: 8px;
+  background-color: #e0f2ea;
+  border: 1px solid #2a9c64;
+  color: #2a9c64;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: none;
 }
-  
+
+.bids-button:hover {
+  background-color: #d1ecdf;
+  color: #217a51;
+}
+
+.bids-button.active {
+  background-color: #2a9c64;
+  color: white;
+  border: 1px solid #2a9c64;
+}
+
 .button-text {
-  margin-left: 3px;
-  margin-right: 3px;
-  color: white; 
+  margin: 0;
 }

@@ -2,12 +2,14 @@ import React from "react";
 import "./ToolBar.css";
 import { FaBars } from "react-icons/fa";
 import { MdNotifications } from "react-icons/md";
-import { MdPerson } from "react-icons/md";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-const ToolBar = ({ toggleMenu }) => {
+const ToolBar = ({ toggleMenu, isSignedIn, onSignUpClick, onSignInClick }) => {
   const navigate = useNavigate();
-  const handleNavigate = (path) => { navigate(path);};
+
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
 
   return (
     <header className="toolbar">
@@ -16,16 +18,25 @@ const ToolBar = ({ toggleMenu }) => {
         <span className="brand-text">Give&Take</span>
       </div>
 
-
-      <div className="icons-container">
-        <MdNotifications className="toolbar-icon large-icon" />
-        <MdPerson className="toolbar-icon large-icon bold-icon" onClick={() => handleNavigate('/profile')} />
-
-        <div className="toolbar-icon" onClick={toggleMenu}>
-          <FaBars />
+      {isSignedIn ? (
+        <div className="icons-container">
+          <img
+            src="https://img.freepik.com/premium-photo/realistic-girl-ai-women_980716-3617.jpg?w=740"
+            alt="Your Profile"
+            className="profile-image-toolbar"
+            onClick={() => handleNavigate("/profile")}
+          />
+          <MdNotifications className="toolbar-icon large-icon" />
+          <div className="toolbar-icon" onClick={toggleMenu}>
+            <FaBars />
+          </div>
         </div>
-        
-      </div>
+      ) : (
+        <div className="auth-buttons-container">
+          <button className="auth-button" onClick={onSignInClick}>Sign In</button>
+          <button className="auth-button" onClick={onSignUpClick}>Sign Up</button>
+        </div>
+      )}
     </header>
   );
 };
