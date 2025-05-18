@@ -28,11 +28,13 @@ export const mockBids = [
       image: 'https://i.ebayimg.com/images/g/tfcAAOSwOopf5EKk/s-l400.jpg',
     },
     user: {
-      name: 'Israel Israeli',
-      location: 'Jerusalem',
-      swaps: 12,
-      profilePic: 'https://cdn.lucidpic.com/cdn-cgi/image/w=600,format=auto,metadata=none/66c4384702f8f.png',
+      name: 'Yuval Fadida',
+      location: 'Tel Aviv',
+      swaps: 7,
+      profilePic: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX38YZu-B5OEll5uaMq1OBDBldxoynEQV4iQ&s',
       lookingFor: ['📺 TVs & Media Devices', '👟 Shoes & Accessories', '👔 Men’s Clothing', '🛋️ Furniture', '🏕️ Camping & Travel Gear']
     }
+    
+
   },
 ];

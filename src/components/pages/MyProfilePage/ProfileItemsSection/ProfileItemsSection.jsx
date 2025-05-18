@@ -42,7 +42,7 @@ const ProfileItemsSection = ({ onAddItem, onItemClick }) => {
       </div>
       <div className="items-grid">
         {mockItems.map((item, i) => (
-          <ItemCard key={i} name={item.name} category={item.category} imageUrl={item.imageUrl} listedSince={item.listedsince} onClick={() => onItemClick(item)} />
+          <ItemCard key={i} inProfile={true} name={item.name} category={item.category} imageUrl={item.imageUrl} listedSince={item.listedsince} onClick={() => onItemClick(item)} />
         ))}
       </div>
     </div>

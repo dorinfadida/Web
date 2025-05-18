@@ -1,12 +1,22 @@
+.search-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the search bar itself */
+  width: 100%;
+  max-width: 100%;
+}
+
 .search-container {
   display: flex;
   align-items: center;
   background-color: #ffffff;
   padding: 6px 12px;
   border-radius: 999px;
-  max-width: 700px;
   width: 100%;
+  max-width: 1000px; /* ⬅️ INCREASED WIDTH */
   border: 0.5px solid #2d3e36;
+  box-sizing: border-box;
 }
 
 .search-input {
@@ -29,29 +39,26 @@
   color: #2d3e36;
 }
 
-.search-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 0;
+.filter-icon {
+  margin-left: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #2d3e36;
 }
 
 .search-options {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
-  z-index: 999;
+  max-width: 1000px; 
   margin-top: 13px;
-  background-color: transparent;
-  border-radius: 0;
-  box-shadow: none;
+  z-index: 999;
+  background-color: #f7f9f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   padding: 0;
-
   animation: fadeIn 0.2s ease-in-out;
+  box-sizing: border-box;
 }
 
 @keyframes fadeIn {

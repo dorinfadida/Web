@@ -1,10 +1,13 @@
 
-  .bids-headline,
+  .bids-headline {
+    margin-top: 50px;
+    color: #2d3e36;
+    text-align: center;
+  }
    .bids-subheadline
   {
     color: #2d3e36;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 20px;
   }
 

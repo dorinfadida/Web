@@ -19,6 +19,7 @@ export const MainContainer = () => {
             listedSince={item.listedSince}
             profileImage={item.profileImage}
             distance={item.distance}
+            userName={item.userName}
           />
         </div>
       ))}

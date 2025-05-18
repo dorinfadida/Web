@@ -89,7 +89,7 @@ const SignUpModal = ({ onClose, onComplete }) => {
         </div>
 
         <div className="signup-right">
-          <label>Swapping Interests:</label>
+          <label className='ineterest-headline'>Pick Your Interests</label>
           <div className="category-buttons">
             {categoryOptions.map((cat) => (
               <button

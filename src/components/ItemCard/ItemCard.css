@@ -1,3 +1,4 @@
+/* === Card Container === */
 #item-card {
   width: 16rem;
   border-radius: 0.75rem;
@@ -6,6 +7,7 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
   position: relative;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #fff;
 }
 
 #item-card:hover {
@@ -13,6 +15,7 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
+/* === Image Section === */
 #item-image {
   height: 14rem;
   background-color: #f3f4f6;
@@ -20,8 +23,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
 
 #item-img {
   width: 100%;
@@ -34,6 +35,60 @@
   font-size: 1rem;
 }
 
+/* === Top Info Bar (User + Distance) === */
+.upper-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FCF9F6;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.5rem 0.75rem;
+}
+
+/* Grouping user image + name */
+.user-info-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* User Name */
+.user-name-info {
+  font-size: 15px;
+  font-family: 'Rubik';
+  color: #2d3e36;
+  white-space: nowrap;
+}
+
+/* Location + Distance */
+.location-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: #2d3e36;
+}
+
+.location-wrapper svg {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.distance-info {
+  font-size: 0.9rem;
+  font-family: 'Rubik';
+  color: #2d3e36;
+}
+
+/* === Item Details Section === */
 #item-details {
   padding: 0.75rem;
   background-color: #FCF9F6;
@@ -41,7 +96,6 @@
   position: relative;
   overflow: hidden; 
 }
-
 
 #item-name {
   font-size: 1.1rem;
@@ -51,44 +105,21 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 0 0 2px 0;
+  font-family: 'Rubik';
 }
 
 #item-category {
   font-size: 0.9rem;
+  font-family: 'Rubik';
   line-height: 1;
   color: #2d3e36;
 }
 
+/* Optional listing time */
 #listed-since {
   font-size: 0.85rem;
   color: #9ca3af;
   position: absolute;
   bottom: 0.2rem;
   right: 0.75rem;
-}
-
-.upper-info {
-  margin: 0;
-  font-size: 0.85rem;
-  color: #6b7280;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  background-color: #FCF9F6;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.profile-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-left: 12px;
-  margin-top: 2px;
-}
-
-
-.distance-info {
-  font-size: 15px;
-  color: #2d3e36;
 }
