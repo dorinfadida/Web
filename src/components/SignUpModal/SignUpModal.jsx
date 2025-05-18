@@ -39,86 +39,88 @@ const SignUpModal = ({ onClose, onComplete }) => {
   };
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+    <div className="modal-overlay-signup" onClick={onClose}>
+      <div className="modal-content-signup" onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={onClose}>×</button>
-        <h2 className="modal-title">Create Your Account</h2>
 
-        <form className="signup-form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label>Name:</label>
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-              placeholder="Your full name"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Email:</label>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              placeholder="you@example.com"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Phone Number:</label>
-            <input
-              type="tel"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-              placeholder="+123456789"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Upload Profile Photo:</label>
-            <input type="file" accept="image/*" onChange={handleFileChange} />
-            {photoPreview && (
-              <img src={photoPreview} alt="Preview" className="photo-preview" />
-            )}
-          </div>
-
-          <div className="form-group">
-            <label>Swapping Interests:</label>
-            <div className="category-buttons">
-              {categoryOptions.map((cat) => (
-                <button
-                  key={cat}
-                  type="button"
-                  className={`category-button ${selectedCategories.includes(cat) ? 'selected' : ''}`}
-                  onClick={() => toggleCategory(cat)}
-                >
-                  {cat}
-                </button>
-              ))}
+        <div className="signup-left">
+          <h2 className="modal-title">Create Your Account</h2>
+          <form className="signup-form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label>Name:</label>
+              <input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                placeholder="Your full name"
+              />
             </div>
-          </div>
 
-        <div className="google-button-wrapper">
-        <MockGoogleButton
-            onClick={() => {
-            console.log('Mock Google Sign-Up clicked');
-            onComplete({
-                name: 'Google User',
-                email: 'googleuser@example.com',
-                phone: '',
-                photo: null,
-                interests: ['📚 Books & Magazines'],
-            });
-            }}
-        />
+            <div className="form-group">
+              <label>Email:</label>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Phone Number:</label>
+              <input
+                type="tel"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                placeholder="+123456789"
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Upload Profile Photo:</label>
+              <input type="file" accept="image/*" onChange={handleFileChange} />
+              {photoPreview && (
+                <img src={photoPreview} alt="Preview" className="photo-preview" />
+              )}
+            </div>
+          </form>
         </div>
 
+        <div className="signup-right">
+          <label>Swapping Interests:</label>
+          <div className="category-buttons">
+            {categoryOptions.map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                className={`category-button ${selectedCategories.includes(cat) ? 'selected' : ''}`}
+                onClick={() => toggleCategory(cat)}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
 
-          <button type="submit" className="submit-button">Create Account</button>
-        </form>
+          <div className="google-button-wrapper">
+            <MockGoogleButton
+              onClick={() => {
+                onComplete({
+                  name: 'Google User',
+                  email: 'googleuser@example.com',
+                  phone: '',
+                  photo: null,
+                  interests: ['📚 Books & Magazines'],
+                });
+              }}
+            />
+          </div>
+
+          <button type="submit" className="submit-button" onClick={handleSubmit}>
+            Create Account
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -13,8 +13,8 @@ const SignInModal = ({ onClose, onComplete }) => {
   };
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+    <div className="modal-overlay-signin" onClick={onClose}>
+      <div className="modal-content-signin" onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={onClose}>×</button>
         <h2 className="modal-title">Sign In</h2>
 
