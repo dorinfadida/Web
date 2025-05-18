@@ -16,7 +16,7 @@ const ToolBar = ({ toggleMenu, isSignedIn, onSignUpClick, onSignInClick }) => {
     <header className="toolbar">
       <div className="logo-container">
         <img src="/favicon.ico" alt="Logo" className="logo" />
-        <span className="brand-text">Give&Take</span>
+        <span className="brand-text">giveNtake</span>
       </div>
 
       <div className="toolbar-search-center">

@@ -4,7 +4,7 @@
   background-color: #ffffff;
   padding: 6px 12px;
   border-radius: 999px;
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   border: 0.5px solid #2d3e36;
 }
@@ -30,7 +30,7 @@
 }
 
 .search-wrapper {
-  position: relative; /* חשוב! כי .search-options תהיה אבסולוטית אליו */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: stretch;
